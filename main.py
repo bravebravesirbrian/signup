@@ -107,7 +107,7 @@ class User_InfoHandler(webapp2.RequestHandler):
             return EMAIL_RE.match(email)
         if valid_email(email_address):
             error_address = ""
-        else if email_address == "":
+        elif email_address == "":
             error_address = ""
         else:
             number_errors += 1
